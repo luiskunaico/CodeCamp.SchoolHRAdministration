@@ -8,11 +8,10 @@ namespace HRAdministrationAPI
 {
     internal interface IEmployee
     {
-        public int Id { get; set; }
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public decimal Salary { get; set; }
-
+        int Id { get; set; }
+        string? FirstName { get; set; }
+        string? LastName { get; set; }
+        decimal Salary { get; set; }
 
     }
 }
