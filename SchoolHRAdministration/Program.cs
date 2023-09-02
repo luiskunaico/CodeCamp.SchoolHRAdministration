@@ -65,20 +65,20 @@ namespace SchoolHRAdministration
 
     class Teacher : EmployeeBase
     {
-
+        public override decimal Salary { get => base.Salary + (base.Salary * 0.02m); }
     }
 
     class HeadOfDepartment : EmployeeBase
     {
-
+        public override decimal Salary { get => base.Salary + (base.Salary * 0.03m); }
     }
     class DeputyHeadMaster : EmployeeBase
     {
-
+        public override decimal Salary { get => base.Salary + (base.Salary * 0.04m); }
     }
 
     class HeadMaster : EmployeeBase
     {
-
+        public override decimal Salary { get => base.Salary + (base.Salary * 0.05m); }
     }
 }
