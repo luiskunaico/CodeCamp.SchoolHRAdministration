@@ -6,6 +6,19 @@ namespace SchoolHRAdministration
     {
         static void Main(string[] args)
         {
+            decimal totalSalaries = 0;
+            var employees = new List<IEmployee>();
+
+            SeedData(employees);
+
+            foreach (var employee in employees)
+            {
+                totalSalaries += employee.Salary;
+            }
+
+            Console.WriteLine($"Total Annual Salaries (including bonus): {totalSalaries}");
+
+            Console.ReadKey();
 
         }
 
